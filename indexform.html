@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+
+    <title>HTML Contact Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We would love to be in touch with you! Please sign up to receive emails from us!</p>
+
+        <hr>
+
+        <h3><strong>Please complete all information below:</strong></h3>
+
+        <form action="indexform.html" method="post"></form>
+
+       
+            <label for="Name">Your Name</label>
+            <section class="Name">
+                <br>
+            
+            <input type="text" id="Name" name="Name" placeholder="First Name" required>
+            <input type="text" id="Name2" name="Name2" placeholder="Middle Name" required>
+            <input type="text" id="Name3" name="Name3" placeholder="Last Name" required>
+            <br>
+        </section>
+
+      
+            <label for="Email">Your Email</label>
+
+            <section class="Email">
+
+            <input type="Email" id="Email" name="Email" required>
+
+        </section>
+
+        <label for="Phone No">Phone</label>
+        <br>
+        <section class="Phone">
+            <input type="Phone Number" id="Phone" name="Phone Number" placeholder="(000) 000 - 0000" required pattern="[0-9]">
+        </section>
+
+        
+            <label for="contact-reason">Contact Reason</label>
+            <section class="Reason">
+            <select id="contact-reason" name="contact-reason">
+                <option value="Sales">Sales</option>
+                <option value="Billing">Billing</option>
+                <option value="Help">Help</option>
+                <option value="Virtual Agent">Virtual Agent</option>
+
+            </select>
+            </section>
+
+            <section class="Message">
+                <label for="Message">Message</label>
+                <textarea name="Message" id="Message" cols="30" rows="10" minlength="5" maxlength="250" required></textarea>
+
+            </section>
+
+            <section class="Submit">
+                <input type="Submit" id="Submit" name="Submit" value="Submit">
+
+            </section>
+        
+
+
+
+        </section>
+
+
+        </div>
+    
+</body>
+</html>
